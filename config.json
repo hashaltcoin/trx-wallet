@@ -1,12 +1,5 @@
 {
   "host": "0.0.0.0",
   "port": 19891,
-  "node_url": "grpc.trongrid.io:50051",
-  "contracts": [
-    {
-      "name": "USDT",
-      "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
-      "contract_type": "trc20"
-    }
-  ]
+  "node_url": "grpc.trongrid.io:50051"
 }
