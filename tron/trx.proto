@@ -1,0 +1,48 @@
+syntax = "proto3";
+package tron;
+
+message Token {
+    string code = 1;
+    string address = 2;
+}
+
+message TokenBalance {
+    int64 amount = 1;
+}
+
+message WalletIndex {
+    int32 index=1;
+}
+
+message WalletInfo {
+    string address = 1;
+    string private = 2;
+}
+
+message SendInfo {
+    string to = 1;
+    int64 amount = 2;
+    int32 index=3;
+    string private = 4;
+    int32 gas = 5;
+}
+
+message TransferResult {
+    int32 code = 1;
+    string txid = 2;
+}
+
+message SendTokenInfo {
+    string to = 1;
+    int64 amount = 2;
+    string contract=3;
+    string private = 4;
+    int32 gas = 5;
+}
+
+service Contract {
+    rpc GetBalance (Token) returns (TokenBalance){}
+    rpc GetWallet (WalletIndex) returns (WalletInfo){}
+    rpc Transfer (SendInfo) returns (TransferResult){}
+    rpc TransferToken (SendTokenInfo) returns (TransferResult){}
+}

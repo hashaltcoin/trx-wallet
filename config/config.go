@@ -15,6 +15,8 @@ var (
 )
 
 type Config struct {
+	Host      string     `json:"host"`
+	Port      int        `json:"port"`
 	NodeURL   string     `json:"node_url"`
 	Contracts []Contract `json:"contracts"`
 }

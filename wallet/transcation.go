@@ -2,9 +2,11 @@ package wallet
 
 import (
 	"crypto/ecdsa"
+	"encoding/hex"
 	"fmt"
 	"math/big"
 
+	"github.com/btcsuite/btcd/btcec"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/hashaltcoin/trx-wallet/common/base58"
 	"github.com/hashaltcoin/trx-wallet/common/hexutil"
@@ -14,8 +16,12 @@ import (
 
 var num60 = decimal.New(1, 6)
 
-// 转币
-func Send(key *ecdsa.PrivateKey, contract, to string, amount decimal.Decimal) (string, error) {
+// Send 转币
+func Send(prikey, contract, to string, amount decimal.Decimal) (string, error) {
+	pkBytes, _ := hex.DecodeString(prikey)
+	privKey, _ := btcec.PrivKeyFromBytes(btcec.S256(), pkBytes)
+	key := (*ecdsa.PrivateKey)(privKey)
+
 	node := service.GetGRPCClient()
 	defer node.Conn.Close()
 	amount6, _ := amount.Mul(num60).Float64()
