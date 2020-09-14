@@ -1,0 +1,10 @@
+{
+  "node_url": "grpc.trongrid.io:50051",
+  "contracts": [
+    {
+      "name": "USDT",
+      "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+      "contract_type": "trc20"
+    }
+  ]
+}

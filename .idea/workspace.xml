@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="96c8eabd-49b9-4afa-9b5c-60b2e494228b" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" path="/opt/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1hUCLm4mHjeogZB8xxJtCqytsXi" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="false" />
+    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1080" y="572" key="#Go_Modules" timestamp="1600056270166">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state x="1080" y="572" key="#Go_Modules/0.23.2560.1417/-1792.240.1792.1097@0.23.2560.1417" timestamp="1600056270166" />
+    <state x="945" y="516" key="EditFileWatcherDialog" timestamp="1600056296687">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state x="945" y="516" key="EditFileWatcherDialog/0.23.2560.1417/-1792.240.1792.1097@0.23.2560.1417" timestamp="1600056296687" />
+    <state x="789" y="370" key="SettingsEditor" timestamp="1600056297330">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state x="789" y="370" key="SettingsEditor/0.23.2560.1417/-1792.240.1792.1097@0.23.2560.1417" timestamp="1600056297330" />
+    <state x="853" y="414" width="855" height="633" key="find.popup" timestamp="1600070959015">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state x="597" y="326" width="598" height="490" key="find.popup/0.23.1792.1097@0.23.1792.1097" timestamp="1600064397413" />
+    <state x="853" y="414" width="855" height="633" key="find.popup/0.23.2560.1417/-1792.240.1792.1097@0.23.2560.1417" timestamp="1600070959015" />
+  </component>
+</project>
