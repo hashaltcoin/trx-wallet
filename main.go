@@ -2,9 +2,14 @@ package main
 
 import (
 	"context"
+	"crypto/ecdsa"
+	"encoding/hex"
 	"fmt"
 	"net"
 
+	"github.com/btcsuite/btcd/btcec"
+	"github.com/hashaltcoin/trx-wallet/common/base58"
+	"github.com/hashaltcoin/trx-wallet/common/crypto"
 	"github.com/hashaltcoin/trx-wallet/config"
 	pb "github.com/hashaltcoin/trx-wallet/tron"
 	"github.com/hashaltcoin/trx-wallet/wallet"
@@ -18,11 +23,16 @@ type TronWallet struct {
 }
 
 func (tw *TronWallet) GetBalance(ctx context.Context, token *pb.Token) (*pb.TokenBalance, error) {
+	pkBytes, _ := hex.DecodeString(token.Address)
+	privKey, _ := btcec.PrivKeyFromBytes(btcec.S256(), pkBytes)
+	re := (*ecdsa.PrivateKey)(privKey)
+	addr := base58.EncodeCheck(crypto.PubkeyToAddress(re.PublicKey).Bytes())
+
 	balance := int64(0)
 	if token.Code == "trx" {
-		balance = wallet.GetBalance(token.Address)
+		balance = wallet.GetBalance(addr)
 	} else if token.Code != "trx" && token.Code != "" {
-		balance = wallet.GetTokenBalance(token.Address, token.Code)
+		balance = wallet.GetTokenBalance(re, addr, token.Code)
 	}
 
 	return &pb.TokenBalance{Amount: balance}, nil
